@@ -34,9 +34,10 @@ body {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  position: fixed;
-  bottom: 0;
-  left: 0;
+}
+
+.link {
+	color: blue;
 }
 
 </style>
@@ -44,29 +45,32 @@ body {
 <body>
 
 <div class="header">
-	<h1>Audio guide</h1>
+	<h3>Audio guide</h3>
 	<h4>Luzern - ein auditives Erlebnis</h4>
+	
 </div>
-
 <div style="padding:10px 10px">
 	<div>
-		<h1>Wilkommen bei Audioguide ABCD</h1>
-		<img src="img/luz.jpg" width="500">
-	</div>
-	<div>
-		<audio controls>
-		<source src="Audio/success.wav" type="audio/wav">
-		Your browser does not support the audio element.
-		</audio>
-		<p>Beschreibung der Tour und was zu erwarten wäre, wo man started etc...</p>
+		<h1>Gehen Sie nun weiter</h1>
+		<p>Das nächste Ziel ist der Schwanenplatz</p>
+		
+		<a class="button" href="index.html" style="background-color:red"> zurück </a>
+		<a href="Location2.html" class="button" >Ich bin da</a>
 	</div>
 	
-	<a href="route1.html" class="button">OK lets go</a>
 	<div>
-		<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1NN9hJm6OJP2uDVFwS3muxX8sWeLXWpTu" width="500" height="500"></iframe>
+		<iframe class="map" src="https://www.google.com/maps/d/embed?mid=1K19AWqFzQCCOD7RYgaShrwnIEKbpCOfa" width="500" height="500"></iframe>
 	</div>
+	
+	
+	<div>
+		
+	</div>	
+	
+	<img src="img/loc1.jpg" width="500">
+	
+	
 </div>
 
 </body>
 </html>
-
